@@ -12,11 +12,16 @@ function App() {
       .then(data => setCountries(data))
       .catch(error => console.log(error))
   }, [])
+
+  const [add,setAdd]=useState([]);
+  const handleAdd =(country)=>{
+    console.log('button is clicked',country);
+  }
   return (
     <div className="App">
       <h2>total country : {countries.length}</h2>
-
-      {countries.map(country => <Country country={country}></Country> )}
+      <h2>Country Addeded: </h2>
+      {countries.map(country => <Country handleAdd={handleAdd} country={country}></Country> )}
 
       
     </div>

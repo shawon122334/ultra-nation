@@ -9,3 +9,10 @@
     margin: 10px;
     padding:10px;
 }
+.country button{
+    background-color: goldenrod;
+    color: white;
+    width:auto;
+    height:auto;
+    border-radius: 7px;
+}
